@@ -653,6 +653,19 @@ fun LiveScreen(
             )
             Spacer(Modifier.height(14.dp))
 
+            AbeTntLiveRail(
+                onOpenArte = {
+                    val arte = channels.itemSnapshotList.items.filterNotNull()
+                        .firstOrNull { it.name.equals("ARTE", ignoreCase = true) }
+                    if (arte != null) {
+                        vm.watchFullscreen(arte, channels.itemSnapshotList.items.filterNotNull())
+                        if (!externalPlayerOn) onFullscreen()
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+            )
+            Spacer(Modifier.height(18.dp))
+
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
