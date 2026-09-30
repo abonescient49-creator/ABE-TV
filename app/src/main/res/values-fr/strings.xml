@@ -22,4 +22,9 @@
     <string name="abe_action_replay_subtitle">Ouvrir les plateformes officielles</string>
     <string name="abe_channels_title">Chaînes TNT</string>
     <string name="abe_provider_native">Direct ABE TV</string>
+
+    <string name="abe_live_tnt_title">Toutes les chaînes TNT</string>
+    <string name="abe_live_tnt_subtitle">ARTE est lu directement. Les chaînes protégées ouvrent leur application officielle.</string>
+    <string name="abe_live_native">Direct intégré</string>
+    <string name="abe_live_official_app">Application officielle</string>
 </resources>
