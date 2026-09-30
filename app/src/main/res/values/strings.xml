@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">ABE TV</string>
+    <string name="brand_own">ABE </string>
+    <string name="brand_tv">TV</string>
+    <string name="abe_france_title">ABE TV France</string>
+    <string name="abe_france_desc">Install the verified French TV preset</string>
     <string name="content_search_channels">Search channels\u2026</string>
     <string name="content_search_movies">Search movies…</string>
     <string name="content_search_series">Search series…</string>
+
+    <string name="abe_home_title">Your TV, made simple</string>
+    <string name="abe_home_subtitle">Live TV, guide, favourites and official replay access</string>
+    <string name="abe_home_badge">ABE TV</string>
+    <string name="abe_action_live">Live TV</string>
+    <string name="abe_action_live_subtitle">Open available channels</string>
+    <string name="abe_action_guide">TV Guide</string>
+    <string name="abe_action_guide_subtitle">See what\'s on now and next</string>
+    <string name="abe_action_favorites">Favourites</string>
+    <string name="abe_action_favorites_subtitle">Open your favourite channels</string>
+    <string name="abe_action_replay">Replays</string>
+    <string name="abe_action_replay_subtitle">Open official streaming apps</string>
+    <string name="abe_channels_title">French DTT channels</string>
+    <string name="abe_provider_native">ABE TV live</string>
+    <string name="abe_live_tnt_title">French DTT channels</string>
+    <string name="abe_live_tnt_subtitle">ARTE plays in ABE TV. Protected channels open their official app.</string>
+    <string name="abe_live_native">Built-in live</string>
+    <string name="abe_live_official_app">Official app</string>
 </resources>

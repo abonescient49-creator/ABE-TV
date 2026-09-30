@@ -130,7 +130,9 @@ fun HomeScreen(
     onPlayMovie: (movieId: Long, positionMs: Long) -> Unit,
     onPlayEpisode: (seriesId: Long, episodeId: Long, positionMs: Long) -> Unit,
     onPlayChannel: (channelId: Long, zapChannels: List<ChannelEntity>) -> Unit,
+    onOpenLive: () -> Unit,
     onOpenGuide: () -> Unit,
+    onOpenFavorites: () -> Unit,
     onActivateTrending: (TrendingHomeItem, onUnavailable: () -> Unit) -> Unit,
     onOpenTrendingSearch: (String) -> Unit,
     onChildFocused: () -> Unit,
@@ -254,7 +256,7 @@ fun HomeScreen(
             else -> null
         }
         val targetIndex = targetRow?.let { renderRows.indexOf(it) } ?: 0
-        runCatching { listState.scrollToItem(targetIndex.coerceAtLeast(0)) }
+        runCatching { listState.scrollToItem((targetIndex + 1).coerceAtLeast(0)) }
 
         // Only pull focus INTO the Home content when returning from the player (restoreFocus). On a cold
         // start or a tab switch, leave focus on the sidebar's Home item so the nav is immediately navigable.
@@ -285,10 +287,8 @@ fun HomeScreen(
         AllRowsHiddenState(modifier = modifier.fillMaxSize())
         return
     }
-    if (showEmptyState) {
-        EmptyHomeState(modifier = modifier.fillMaxSize())
-        return
-    }
+    // ABE TV keeps its quick-access hub visible even before history/favourites exist.
+    // An empty provider home therefore no longer replaces the whole screen with an empty state.
 
     val hero = state.heroItems.getOrNull(state.activeHeroIndex)
     val defaultBringIntoViewSpec = LocalBringIntoViewSpec.current
@@ -323,6 +323,15 @@ fun HomeScreen(
         contentPadding = PaddingValues(vertical = Dimens.ScreenPaddingV),
         verticalArrangement = Arrangement.spacedBy(Dimens.GapLarge),
     ) {
+        item(key = "abe_tv_quick_hub") {
+            AbeTvQuickHub(
+                onOpenLive = onOpenLive,
+                onOpenGuide = onOpenGuide,
+                onOpenFavorites = onOpenFavorites,
+                modifier = Modifier.fillMaxWidth(),
+            )
+        }
+
         itemsIndexed(renderRows, key = { _, row -> row.name }) { index, row ->
             val firstItemFocusRequester = rowFocusRequester(row)
             val nextRowIndex = renderRows
@@ -334,9 +343,10 @@ fun HomeScreen(
                 val targetFocusRequester = rowFocusRequester(renderRows[targetIndex]) ?: return@let null
                 {
                     homeScope.launch {
-                        val targetIsVisible = listState.layoutInfo.visibleItemsInfo.any { it.index == targetIndex }
+                        val listTargetIndex = targetIndex + 1
+                        val targetIsVisible = listState.layoutInfo.visibleItemsInfo.any { it.index == listTargetIndex }
                         if (!targetIsVisible) {
-                            listState.scrollToItem(targetIndex)
+                            listState.scrollToItem(listTargetIndex)
                             kotlinx.coroutines.delay(50)
                         }
                         runCatching { targetFocusRequester.requestFocus() }

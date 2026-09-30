@@ -104,6 +104,7 @@ fun Onboarding(firstRun: Boolean, onDone: (Long?) -> Unit, onCancel: () -> Unit,
     val defaultIptvName = stringResource(R.string.setup_default_iptv)
     val defaultPlaylistName = stringResource(R.string.setup_name_default_playlist)
     val defaultPortalName = stringResource(R.string.setup_default_portal)
+    val abeFranceName = stringResource(R.string.abe_france_title)
     var step by rememberSaveable(firstRun) { mutableStateOf(if (firstRun) Step.WELCOME else Step.CREATE_PROFILE) }
     val importState by vm.state.collectAsStateWithLifecycle()
     val progress by vm.progress.collectAsStateWithLifecycle()
@@ -157,6 +158,14 @@ fun Onboarding(firstRun: Boolean, onDone: (Long?) -> Unit, onCancel: () -> Unit,
             )
             Step.ADD_CONTENT -> AddContentScreen(
                 hasExisting = existing.isNotEmpty(),
+                onAbeFrance = {
+                    vm.startM3u(
+                        name = abeFranceName,
+                        url = "https://raw.githubusercontent.com/abonescient49-creator/ABE-TV/abe-tv-v1/extras/abe-tv-france.m3u",
+                    )
+                    importOrigin = Step.ADD_CONTENT
+                    step = Step.IMPORTING
+                },
                 onNew = { step = Step.ADD_SOURCE_CHOOSER },
                 onExisting = { step = Step.EXISTING },
                 onImport = { backupOrigin = Step.ADD_CONTENT; step = Step.IMPORT_BACKUP_CHOOSER },
@@ -596,7 +605,14 @@ private fun SetupChoiceScreen(onCreate: () -> Unit, onRestore: () -> Unit, onSyn
 }
 
 @Composable
-private fun AddContentScreen(hasExisting: Boolean, onNew: () -> Unit, onExisting: () -> Unit, onImport: () -> Unit, onSkip: () -> Unit) {
+private fun AddContentScreen(
+    hasExisting: Boolean,
+    onAbeFrance: () -> Unit,
+    onNew: () -> Unit,
+    onExisting: () -> Unit,
+    onImport: () -> Unit,
+    onSkip: () -> Unit,
+) {
     val colors = OwnTVTheme.colors
     val fr = remember { FocusRequester() }
     LaunchedEffect(Unit) { runCatching { fr.requestFocus() } }
@@ -616,7 +632,14 @@ private fun AddContentScreen(hasExisting: Boolean, onNew: () -> Unit, onExisting
         SetupAccentRule()
         Spacer(Modifier.height(24.dp))
         Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-            ChoiceCard(icon = OwnTVIcon.ADD, title = stringResource(R.string.setup_new), desc = stringResource(R.string.setup_add_m3u_xtream), modifier = Modifier.focusRequester(fr), onClick = onNew)
+            ChoiceCard(
+                icon = OwnTVIcon.LIVE_TV,
+                title = stringResource(R.string.abe_france_title),
+                desc = stringResource(R.string.abe_france_desc),
+                modifier = Modifier.focusRequester(fr),
+                onClick = onAbeFrance,
+            )
+            ChoiceCard(icon = OwnTVIcon.ADD, title = stringResource(R.string.setup_new), desc = stringResource(R.string.setup_add_m3u_xtream), onClick = onNew)
             if (hasExisting) {
                 ChoiceCard(icon = OwnTVIcon.PLAYLIST, title = stringResource(R.string.setup_existing), desc = stringResource(R.string.setup_use_other_profile_playlists), onClick = onExisting)
             }
