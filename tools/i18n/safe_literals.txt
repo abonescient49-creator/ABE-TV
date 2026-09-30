@@ -1126,3 +1126,6 @@
 1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	RMC Story
 1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	RMC Découverte
 1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	Chérie 25
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	com.nextinteractive.rmcbfmplay.tv
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	com.nextinteractive.rmcbfmplay
+1	technical	app/src/main/java/tv/own/owntv/features/home/HomeScreen.kt	abe_tv_quick_hub
