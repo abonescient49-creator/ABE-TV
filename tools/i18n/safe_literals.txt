@@ -1129,3 +1129,44 @@
 1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	com.nextinteractive.rmcbfmplay.tv
 1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	com.nextinteractive.rmcbfmplay
 1	technical	app/src/main/java/tv/own/owntv/features/home/HomeScreen.kt	abe_tv_quick_hub
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	fr.tf1.mytf1
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	fr.francetv.pluzz
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	fr.m6.m6replay
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	com.nextinteractive.rmcbfmplay.tv.sfr
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	com.nextinteractive.rmcbfmplay.tv
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	com.nextinteractive.rmcbfmplay
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	com.canal.android.canal
+2	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	TF1+
+2	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	france.tv
+2	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	M6+
+2	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	RMC BFM Play
+2	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	CANAL+
+2	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	NRJ Play
+2	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	T18
+2	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	ARTE
+1	url	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	market://search?q=
+2	url	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	&c=apps
+1	url	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	https://play.google.com/store/search?q=
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	TF1
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	France 2
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	France 3
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	France 4
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	France 5
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	M6
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	LCP · Public Sénat
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	W9
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	TMC
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	TFX
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	Gulli
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	BFM TV
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	CNEWS
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	LCI
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	franceinfo:
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	CStar
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	NOVO19
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	TF1 Séries Films
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	L'Équipe
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	6ter
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	RMC Story
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	RMC Découverte
+1	technical	app/src/main/java/tv/own/owntv/features/live/AbeTntLiveRail.kt	Chérie 25
