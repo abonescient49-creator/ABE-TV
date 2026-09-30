@@ -8,4 +8,18 @@
     <string name="content_search_channels">Rechercher des chaînes…</string>
     <string name="content_search_movies">Rechercher des films…</string>
     <string name="content_search_series">Rechercher des séries…</string>
+
+    <string name="abe_home_title">Votre TV, simplement</string>
+    <string name="abe_home_subtitle">Direct, guide, favoris et accès aux replays officiels</string>
+    <string name="abe_home_badge">ABE TV</string>
+    <string name="abe_action_live">En direct</string>
+    <string name="abe_action_live_subtitle">Accéder aux chaînes disponibles</string>
+    <string name="abe_action_guide">Guide TV</string>
+    <string name="abe_action_guide_subtitle">Voir les programmes maintenant et ensuite</string>
+    <string name="abe_action_favorites">Favoris</string>
+    <string name="abe_action_favorites_subtitle">Retrouver vos chaînes préférées</string>
+    <string name="abe_action_replay">Replays</string>
+    <string name="abe_action_replay_subtitle">Ouvrir les plateformes officielles</string>
+    <string name="abe_channels_title">Chaînes TNT</string>
+    <string name="abe_provider_native">Direct ABE TV</string>
 </resources>
