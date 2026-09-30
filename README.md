@@ -1,3 +1,13 @@
+# ABE TV
+
+ABE TV est une adaptation Android TV orientée télévision française, basée sur le projet open source [OwnTV](https://github.com/ahXN00/OwnTV) (GPL-3.0).
+
+Objectif de cette branche : conserver le moteur TV natif éprouvé d'OwnTV (ExoPlayer/mpv, zapping, EPG, télécommande) et construire une expérience simplifiée autour de sources françaises légales. Aucun mécanisme d'authentification, jeton ou DRM n'est contourné.
+
+> État actuel : fondation de test. Le preset **ABE TV France** contient d'abord ARTE afin de valider le lecteur natif sur la box avant l'ajout d'autres sources vérifiées.
+
+---
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="extras/brand/app-logos/logo_eggshell_light.png">
