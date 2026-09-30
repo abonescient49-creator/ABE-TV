@@ -8,4 +8,18 @@
     <string name="content_search_channels">Search channels\u2026</string>
     <string name="content_search_movies">Search movies…</string>
     <string name="content_search_series">Search series…</string>
+
+    <string name="abe_home_title">Your TV, made simple</string>
+    <string name="abe_home_subtitle">Live TV, guide, favourites and official replay access</string>
+    <string name="abe_home_badge">ABE TV</string>
+    <string name="abe_action_live">Live TV</string>
+    <string name="abe_action_live_subtitle">Open available channels</string>
+    <string name="abe_action_guide">TV Guide</string>
+    <string name="abe_action_guide_subtitle">See what's on now and next</string>
+    <string name="abe_action_favorites">Favourites</string>
+    <string name="abe_action_favorites_subtitle">Open your favourite channels</string>
+    <string name="abe_action_replay">Replays</string>
+    <string name="abe_action_replay_subtitle">Open official streaming apps</string>
+    <string name="abe_channels_title">French DTT channels</string>
+    <string name="abe_provider_native">ABE TV live</string>
 </resources>
