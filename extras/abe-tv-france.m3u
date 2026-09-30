@@ -1,0 +1,6 @@
+#EXTM3U
+# ABE TV France - preset légal de validation
+# Cette première source ne contient que des flux directs publics vérifiés.
+# Les chaînes nécessitant une authentification, un jeton ou un DRM ne sont pas contournées.
+#EXTINF:-1 tvg-id="ARTEFrench.fr" tvg-chno="7" group-title="TNT France" tvg-logo="https://api-cdn.arte.tv/img/v2/image/j4EoSJjX26uySVWdmt3EmS/1920x1080",ARTE
+https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
