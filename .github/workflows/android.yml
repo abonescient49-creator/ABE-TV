@@ -8,7 +8,7 @@ name: Android CI
 #                unchanged); they only get the test/lint verdict.
 on:
   push:
-    branches: [ main ]
+    branches: [ main, abe-tv-v1 ]
     tags: [ "v*" ]
   pull_request:
     branches: [ main ]
@@ -255,13 +255,13 @@ jobs:
             echo "ARM_SRC=$SRC" >> "$GITHUB_ENV"
           fi
 
-      - name: Name the APK (OwnTV-v<version>)
+      - name: Name the APK (ABE-TV-v<version>)
         run: |
           mkdir -p dist
           if [ "$IS_TAG" = "true" ]; then
-            OUT="OwnTV-v${{ steps.ver.outputs.name }}.apk"
+            OUT="ABE-TV-v${{ steps.ver.outputs.name }}.apk"
           else
-            OUT="OwnTV-dev-${GITHUB_SHA::7}.apk"
+            OUT="ABE-TV-dev-${GITHUB_SHA::7}.apk"
           fi
           cp "$ARM_SRC" "dist/$OUT"
           echo "APK_OUT=$OUT" >> "$GITHUB_ENV"
@@ -270,12 +270,12 @@ jobs:
           # release: https://github.com/<repo>/releases/latest/download/OwnTV.apk
           # (used by the Fire TV Downloader code and any "always-latest" sideload link).
           if [ "$IS_TAG" = "true" ]; then
-            cp "$ARM_SRC" "dist/OwnTV.apk"
+            cp "$ARM_SRC" "dist/ABE-TV.apk"
             # Separate x86_64 build for emulators / rare Intel boxes. Pinned to the version only —
             # no always-latest copy, since real devices (the Downloader audience) don't need it.
             if [ -n "$X86_SRC" ]; then
-              cp "$X86_SRC" "dist/OwnTV-x86_64-v${{ steps.ver.outputs.name }}.apk"
-              echo "Packaged dist/OwnTV-x86_64-v${{ steps.ver.outputs.name }}.apk"
+              cp "$X86_SRC" "dist/ABE-TV-x86_64-v${{ steps.ver.outputs.name }}.apk"
+              echo "Packaged dist/ABE-TV-x86_64-v${{ steps.ver.outputs.name }}.apk"
             fi
           fi
 
