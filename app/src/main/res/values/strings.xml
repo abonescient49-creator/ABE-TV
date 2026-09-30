@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">ABE TV</string>
+    <string name="brand_own">ABE </string>
+    <string name="brand_tv">TV</string>
+    <string name="abe_france_title">ABE TV France</string>
+    <string name="abe_france_desc">Install the verified French TV preset</string>
     <string name="content_search_channels">Search channels\u2026</string>
     <string name="content_search_movies">Search movies…</string>
     <string name="content_search_series">Search series…</string>
