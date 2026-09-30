@@ -15,7 +15,7 @@
     <string name="abe_action_live">Live TV</string>
     <string name="abe_action_live_subtitle">Open available channels</string>
     <string name="abe_action_guide">TV Guide</string>
-    <string name="abe_action_guide_subtitle">See what's on now and next</string>
+    <string name="abe_action_guide_subtitle">See what\'s on now and next</string>
     <string name="abe_action_favorites">Favourites</string>
     <string name="abe_action_favorites_subtitle">Open your favourite channels</string>
     <string name="abe_action_replay">Replays</string>
