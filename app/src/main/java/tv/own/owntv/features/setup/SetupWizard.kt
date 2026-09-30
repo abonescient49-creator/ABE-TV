@@ -104,6 +104,7 @@ fun Onboarding(firstRun: Boolean, onDone: (Long?) -> Unit, onCancel: () -> Unit,
     val defaultIptvName = stringResource(R.string.setup_default_iptv)
     val defaultPlaylistName = stringResource(R.string.setup_name_default_playlist)
     val defaultPortalName = stringResource(R.string.setup_default_portal)
+    val abeFranceName = stringResource(R.string.abe_france_title)
     var step by rememberSaveable(firstRun) { mutableStateOf(if (firstRun) Step.WELCOME else Step.CREATE_PROFILE) }
     val importState by vm.state.collectAsStateWithLifecycle()
     val progress by vm.progress.collectAsStateWithLifecycle()
@@ -159,7 +160,7 @@ fun Onboarding(firstRun: Boolean, onDone: (Long?) -> Unit, onCancel: () -> Unit,
                 hasExisting = existing.isNotEmpty(),
                 onAbeFrance = {
                     vm.startM3u(
-                        name = "ABE TV France",
+                        name = abeFranceName,
                         url = "https://raw.githubusercontent.com/abonescient49-creator/ABE-TV/abe-tv-v1/extras/abe-tv-france.m3u",
                     )
                     importOrigin = Step.ADD_CONTENT
