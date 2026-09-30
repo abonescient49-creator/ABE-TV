@@ -1085,3 +1085,44 @@
 2	empty	app/src/main/java/tv/own/owntv/ui/theme/OwnTVColors.kt	\0
 2	empty	app/src/main/java/tv/own/owntv/ui/theme/Theme.kt	\0
 1	url	app/src/main/java/tv/own/owntv/features/setup/SetupWizard.kt	https://raw.githubusercontent.com/abonescient49-creator/ABE-TV/abe-tv-v1/extras/abe-tv-france.m3u
+2	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	TF1+
+2	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	france.tv
+2	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	M6+
+2	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	RMC+
+3	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	CNEWS
+2	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	CANAL+
+3	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	T18
+2	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	NRJ Play
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	fr.tf1.mytf1
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	fr.francetv.pluzz
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	fr.m6.m6replay
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	com.nextinteractive.rmcbfmplay.tv.sfr
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	fr.canalplus.itele
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	com.canal.android.canal
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	ABE TV
+1	url	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	market://search?q=
+2	url	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	&c=apps
+1	url	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	https://play.google.com/store/search?q=
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	TF1
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	France 2
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	France 3
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	France 4
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	France 5
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	M6
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	ARTE
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	LCP · Public Sénat
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	W9
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	TMC
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	TFX
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	Gulli
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	BFM TV
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	LCI
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	franceinfo:
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	CStar
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	NOVO19
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	TF1 Séries Films
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	L'Équipe
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	6ter
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	RMC Story
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	RMC Découverte
+1	technical	app/src/main/java/tv/own/owntv/features/home/AbeTvQuickHub.kt	Chérie 25
